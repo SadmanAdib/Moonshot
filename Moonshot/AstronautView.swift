@@ -11,13 +11,23 @@ struct AstronautView: View {
     
     let astronaut: Astronaut
     
+    @State private var rotationAmount = 0.0
+    
     var body: some View {
             ScrollView {
                 VStack {
-                    Image(astronaut.id)
-                        .resizable()
-                        .scaledToFit()
-
+                    
+                    Button{
+                        withAnimation {
+                            rotationAmount += 360
+                        }
+                    }label: {
+                        Image(astronaut.id)
+                            .resizable()
+                            .scaledToFit()
+                            .rotation3DEffect(.degrees(rotationAmount), axis: (x: 0, y: 1, z: 0))
+                    }
+                    
                     Text(astronaut.description)
                         .padding()
                 }
