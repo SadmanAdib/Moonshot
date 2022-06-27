@@ -23,6 +23,7 @@
 		32552E95286983D700194472 /* MissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32552E94286983D700194472 /* MissionView.swift */; };
 		32552E99286990EC00194472 /* AstronautView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32552E98286990EC00194472 /* AstronautView.swift */; };
 		32552E9B2869A70000194472 /* HorizontalScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32552E9A2869A70000194472 /* HorizontalScrollView.swift */; };
+		32552E9D2869ADA400194472 /* RectangleDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32552E9C2869ADA400194472 /* RectangleDivider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		32552E94286983D700194472 /* MissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionView.swift; sourceTree = "<group>"; };
 		32552E98286990EC00194472 /* AstronautView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautView.swift; sourceTree = "<group>"; };
 		32552E9A2869A70000194472 /* HorizontalScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalScrollView.swift; sourceTree = "<group>"; };
+		32552E9C2869ADA400194472 /* RectangleDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleDivider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				32552E5E2869668300194472 /* MoonshotApp.swift */,
 				32552E602869668300194472 /* ContentView.swift */,
 				32552E94286983D700194472 /* MissionView.swift */,
+				32552E9C2869ADA400194472 /* RectangleDivider.swift */,
 				32552E9A2869A70000194472 /* HorizontalScrollView.swift */,
 				32552E98286990EC00194472 /* AstronautView.swift */,
 				32552E92286980DE00194472 /* Color-Theme.swift */,
@@ -295,6 +298,7 @@
 				32552E912869781400194472 /* Mission.swift in Sources */,
 				32552E9B2869A70000194472 /* HorizontalScrollView.swift in Sources */,
 				32552E8F2869749C00194472 /* Bundle-Decodable.swift in Sources */,
+				32552E9D2869ADA400194472 /* RectangleDivider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
