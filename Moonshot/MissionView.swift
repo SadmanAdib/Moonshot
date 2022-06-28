@@ -9,6 +9,18 @@ import SwiftUI
 
 struct MissionView: View {
     
+    init(mission: Mission, astronauts: [String: Astronaut]) {
+        self.mission = mission
+
+        self.crew = mission.crew.map { member in
+            if let astronaut = astronauts[member.name] {
+                return CrewMember(role: member.role, astronaut: astronaut)
+            } else {
+                fatalError("Missing \(member.name)")
+            }
+        }
+    }
+    
     @State private var rotationAmount = 0.0
     
     let astronauts: [String: Astronaut] = Bundle.main.decode("astronauts.json")
@@ -39,8 +51,6 @@ struct MissionView: View {
                                 .rotation3DEffect(.degrees(rotationAmount), axis: (x: 0, y: 1, z: 0))
                         }
                         
-                       
-                        
                         Text(mission.formattedLaunchDateTwo)
                             .font(.caption)
                             .foregroundColor(.white.opacity(0.5))
@@ -64,7 +74,7 @@ struct MissionView: View {
                             .font(.title.bold())
                             .padding(.bottom, 5)
                         
-                        HorizontalScrollView(mission: mission, astronauts: astronauts )
+                       CrewView(crew: crew )
                         
 //                        ScrollView(.horizontal, showsIndicators: false) {
 //                            HStack {
@@ -103,18 +113,6 @@ struct MissionView: View {
             .navigationBarTitleDisplayMode(.inline)
             .background(.darkBackground)
         }
-    
-    init(mission: Mission, astronauts: [String: Astronaut]) {
-        self.mission = mission
-
-        self.crew = mission.crew.map { member in
-            if let astronaut = astronauts[member.name] {
-                return CrewMember(role: member.role, astronaut: astronaut)
-            } else {
-                fatalError("Missing \(member.name)")
-            }
-        }
-    }
     
     }
 

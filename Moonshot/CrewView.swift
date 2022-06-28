@@ -7,15 +7,14 @@
 
 import SwiftUI
 
-struct HorizontalScrollView: View {
+struct CrewView: View {
     
     struct CrewMember {
         let role: String
         let astronaut: Astronaut
     }
     
-    let mission: Mission
-    let crew: [CrewMember]
+    let crew: [MissionView.CrewMember]
     
     var body: some View{
         
@@ -50,27 +49,17 @@ struct HorizontalScrollView: View {
         }
     }
     
-    init(mission: Mission, astronauts: [String: Astronaut]) {
-        self.mission = mission
-
-        self.crew = mission.crew.map { member in
-            if let astronaut = astronauts[member.name] {
-                return CrewMember(role: member.role, astronaut: astronaut)
-            } else {
-                fatalError("Missing \(member.name)")
-            }
-        }
+    init(crew: [MissionView.CrewMember]) {
+       
+        self.crew = crew
+        
     }
     
 }
 
-struct HorizontalScrollView_Previews: PreviewProvider {
-    
-    static let missions: [Mission] = Bundle.main.decode("missions.json")
-    static let astronauts: [String: Astronaut] = Bundle.main.decode("astronauts.json")
-    
-    
-    static var previews: some View {
-        HorizontalScrollView(mission: missions[0], astronauts: astronauts)
-    }
-}
+//struct CrewView_Previews: PreviewProvider {
+//
+//    static var previews: some View {
+//        CrewView() Need to complete this for preview
+//    }
+//}
