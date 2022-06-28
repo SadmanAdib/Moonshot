@@ -52,9 +52,12 @@ struct CrewView: View {
     
 }
 
-//struct CrewView_Previews: PreviewProvider {
-//
-//    static var previews: some View {
-//        CrewView() Need to complete this for preview
-//    }
-//}
+struct CrewView_Previews: PreviewProvider {
+
+    static var singleCrew = [CrewMember(role: "Command Pilot", astronaut: Astronaut(id: "grissom", name: "sample name", description: "sample data"))]
+    
+    static var previews: some View {
+        CrewView(crew: singleCrew)
+            .preferredColorScheme(.dark)
+    }
+}

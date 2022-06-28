@@ -118,8 +118,8 @@
 			children = (
 				32552E5E2869668300194472 /* MoonshotApp.swift */,
 				32552E602869668300194472 /* ContentView.swift */,
-				32552E94286983D700194472 /* MissionView.swift */,
 				32552E9C2869ADA400194472 /* RectangleDivider.swift */,
+				32552E94286983D700194472 /* MissionView.swift */,
 				32552E9A2869A70000194472 /* CrewView.swift */,
 				32552E98286990EC00194472 /* AstronautView.swift */,
 				32552E92286980DE00194472 /* Color-Theme.swift */,

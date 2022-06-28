@@ -71,7 +71,7 @@ struct MissionView: View {
                             .font(.title.bold())
                             .padding(.bottom, 5)
                         
-                       CrewView(crew: crew )
+                       CrewView(crew: crew)
                         
 //                        ScrollView(.horizontal, showsIndicators: false) {
 //                            HStack {
