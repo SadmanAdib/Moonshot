@@ -9,6 +9,8 @@ import SwiftUI
 
 struct MissionView: View {
     
+    @State private var rotationAmount = 0.0
+    
     let astronauts: [String: Astronaut] = Bundle.main.decode("astronauts.json")
     
     struct CrewMember {
@@ -23,11 +25,21 @@ struct MissionView: View {
             GeometryReader { geometry in
                 ScrollView {
                     VStack {
-                        Image(mission.image)
-                            .resizable()
-                            .scaledToFit()
-                            .frame(maxWidth: geometry.size.width * 0.6)
-                            .padding(.top)
+                        
+                        Button{
+                            withAnimation {
+                                rotationAmount += 360
+                            }
+                        }label: {
+                            Image(mission.image)
+                                .resizable()
+                                .scaledToFit()
+                                .frame(maxWidth: geometry.size.width * 0.6)
+                                .padding(.top)
+                                .rotation3DEffect(.degrees(rotationAmount), axis: (x: 0, y: 1, z: 0))
+                        }
+                        
+                       
                         
                         Text(mission.formattedLaunchDateTwo)
                             .font(.caption)
