@@ -25,6 +25,7 @@
 		32552E9B2869A70000194472 /* CrewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32552E9A2869A70000194472 /* CrewView.swift */; };
 		32552E9D2869ADA400194472 /* RectangleDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32552E9C2869ADA400194472 /* RectangleDivider.swift */; };
 		32552EA1286B02BC00194472 /* CrewMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32552EA0286B02BC00194472 /* CrewMember.swift */; };
+		32552EA3286B1AEC00194472 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32552EA2286B1AEC00194472 /* GridView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		32552E9A2869A70000194472 /* CrewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrewView.swift; sourceTree = "<group>"; };
 		32552E9C2869ADA400194472 /* RectangleDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleDivider.swift; sourceTree = "<group>"; };
 		32552EA0286B02BC00194472 /* CrewMember.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrewMember.swift; sourceTree = "<group>"; };
+		32552EA2286B1AEC00194472 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 			children = (
 				32552E5E2869668300194472 /* MoonshotApp.swift */,
 				32552E602869668300194472 /* ContentView.swift */,
+				32552EA2286B1AEC00194472 /* GridView.swift */,
 				32552E9C2869ADA400194472 /* RectangleDivider.swift */,
 				32552E94286983D700194472 /* MissionView.swift */,
 				32552E9A2869A70000194472 /* CrewView.swift */,
@@ -302,6 +305,7 @@
 				32552E9B2869A70000194472 /* CrewView.swift in Sources */,
 				32552E8F2869749C00194472 /* Bundle-Decodable.swift in Sources */,
 				32552E9D2869ADA400194472 /* RectangleDivider.swift in Sources */,
+				32552EA3286B1AEC00194472 /* GridView.swift in Sources */,
 				32552EA1286B02BC00194472 /* CrewMember.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
