@@ -9,12 +9,7 @@ import SwiftUI
 
 struct CrewView: View {
     
-    struct CrewMember {
-        let role: String
-        let astronaut: Astronaut
-    }
-    
-    let crew: [MissionView.CrewMember]
+    let crew: [CrewMember]
     
     var body: some View{
         
@@ -49,7 +44,7 @@ struct CrewView: View {
         }
     }
     
-    init(crew: [MissionView.CrewMember]) {
+    init(crew: [CrewMember]) {
        
         self.crew = crew
         

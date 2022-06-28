@@ -25,10 +25,7 @@ struct MissionView: View {
     
     let astronauts: [String: Astronaut] = Bundle.main.decode("astronauts.json")
     
-    struct CrewMember {
-        let role: String
-        let astronaut: Astronaut
-    }
+    
     
     let mission: Mission
     let crew: [CrewMember]
