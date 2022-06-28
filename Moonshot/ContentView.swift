@@ -11,6 +11,7 @@ struct ContentView: View {
     
     let astronauts: [String: Astronaut] = Bundle.main.decode("astronauts.json")
     let missions: [Mission] = Bundle.main.decode("missions.json")
+    @State private var showingGrid = true
     
 //    let columns = [
 //        GridItem(.adaptive(minimum: 150))
@@ -18,7 +19,15 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            GridView(astronauts: astronauts, missions: missions)
+            Group {
+                if showingGrid {
+                    GridView(astronauts: astronauts, missions: missions)
+                } else {
+                    ListView(astronauts: astronauts, missions: missions)
+                }
+            }
+           // GridView(astronauts: astronauts, missions: missions)
+            //ListView(astronauts: astronauts, missions: missions)
 //            ScrollView {
 //                LazyVGrid(columns: columns) {
 //                    ForEach(missions) { mission in
@@ -55,9 +64,17 @@ struct ContentView: View {
 //                }
 //                .padding([.horizontal, .bottom])
 //            }
+            .padding([.horizontal, .bottom])
             .navigationTitle("Moonshot")
             .background(.darkBackground)
             .preferredColorScheme(.dark)// to force dark mode
+            .toolbar {
+                Button {
+                    showingGrid.toggle()
+                } label: {
+                    Text("Alter View")
+                }
+            }
         }
     }
 }

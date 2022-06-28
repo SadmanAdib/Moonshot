@@ -50,7 +50,7 @@ struct GridView: View {
                     }
                 }
             }
-            .padding([.horizontal, .bottom])
+           // .padding([.horizontal, .bottom])
         }
     }
 }

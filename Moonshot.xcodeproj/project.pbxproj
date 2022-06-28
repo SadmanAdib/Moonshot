@@ -26,6 +26,7 @@
 		32552E9D2869ADA400194472 /* RectangleDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32552E9C2869ADA400194472 /* RectangleDivider.swift */; };
 		32552EA1286B02BC00194472 /* CrewMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32552EA0286B02BC00194472 /* CrewMember.swift */; };
 		32552EA3286B1AEC00194472 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32552EA2286B1AEC00194472 /* GridView.swift */; };
+		32552EA5286B1D0B00194472 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32552EA4286B1D0B00194472 /* ListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		32552E9C2869ADA400194472 /* RectangleDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleDivider.swift; sourceTree = "<group>"; };
 		32552EA0286B02BC00194472 /* CrewMember.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrewMember.swift; sourceTree = "<group>"; };
 		32552EA2286B1AEC00194472 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
+		32552EA4286B1D0B00194472 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 			children = (
 				32552E5E2869668300194472 /* MoonshotApp.swift */,
 				32552E602869668300194472 /* ContentView.swift */,
+				32552EA4286B1D0B00194472 /* ListView.swift */,
 				32552EA2286B1AEC00194472 /* GridView.swift */,
 				32552E9C2869ADA400194472 /* RectangleDivider.swift */,
 				32552E94286983D700194472 /* MissionView.swift */,
@@ -296,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				32552E95286983D700194472 /* MissionView.swift in Sources */,
+				32552EA5286B1D0B00194472 /* ListView.swift in Sources */,
 				32552E8D2869747800194472 /* Astronaut.swift in Sources */,
 				32552E99286990EC00194472 /* AstronautView.swift in Sources */,
 				32552E93286980DE00194472 /* Color-Theme.swift in Sources */,
